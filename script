@@ -1,0 +1,27 @@
+Script for interaction
+
+Invoke skill :
+User : Alexa, lets study using skillStudyFlashcards
+
+Alexa: Alright, How many flashcards do you want in your set ? 
+User: "Says number of flashcards"
+
+
+
+Obtaining the question and answer
+
+# base case
+Alexa : What is the question?
+User : "Enter question"
+
+Alexa : To be sure this was the question - "repeats question"
+User : Yes or No
+
+if No :
+Alexa :Please restate the question?
+User : "Enter question"
+
+
+if yes:
+Alexa: Alright question stored
+** now go to base case
