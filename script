@@ -25,19 +25,26 @@ User : "Enter question"
 
 
 if yes:
-Alexa: Alright question stored
+Alexa: Question stored, What is the answer to your question?
+user: "gives answer"
+
+Alexa: The answer to your question is "user answer" is this correct?
+user: "Correct or not"
+
+loop till yes:
+	if no:
+	Alexa: Ok, please repeat the answer
+	user: "gives answer"
+
+if yes: 
 ** now go to base case
 
 ------------------------------------------------------------------
 Phase 2: the study session
 
-
-# define help
-
 Alexa: Alright all the questions have been entered
 
-Alexa: Here's the question : "asks question"  Say repeat to have me repeat
-the question or say help
+Alexa: Here's the question : "asks question" 
 #needs to wait for Users answer
 
 #User can ask to repeat the question or can straight up answer
