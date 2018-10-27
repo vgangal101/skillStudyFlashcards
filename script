@@ -42,13 +42,9 @@ if yes:
 ------------------------------------------------------------------
 Phase 2: the study session
 
-
-# define help
-
 Alexa: Alright all the questions have been entered
 
-Alexa: Here's the question : "asks question"  Say repeat to have me repeat
-the question or say help
+Alexa: Here's the question : "asks question" 
 #needs to wait for Users answer
 
 #User can ask to repeat the question or can straight up answer
