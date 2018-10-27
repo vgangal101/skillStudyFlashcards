@@ -25,7 +25,18 @@ User : "Enter question"
 
 
 if yes:
-Alexa: Alright question stored
+Alexa: Question stored, What is the answer to your question?
+user: "gives answer"
+
+Alexa: The answer to your question is "user answer" is this correct?
+user: "Correct or not"
+
+loop till yes:
+	if no:
+	Alexa: Ok, please repeat the answer
+	user: "gives answer"
+
+if yes: 
 ** now go to base case
 
 ------------------------------------------------------------------
