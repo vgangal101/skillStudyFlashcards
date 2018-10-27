@@ -1,14 +1,16 @@
 Script for interaction
 
 Invoke skill :
-User : Alexa, lets study using skillStudyFlashcards
+User : Alexa, lets study using flashcards
 
-Alexa: Alright, How many flashcards do you want in your set ? 
+Alexa: Alright, How many flashcards do you want in your set ?
 User: "Says number of flashcards"
 
-
-
+Phase 1
+---------------------------------------------------------------------
 Obtaining the question and answer
+
+#does for number of total flashcards
 
 # base case
 Alexa : What is the question?
@@ -25,3 +27,39 @@ User : "Enter question"
 if yes:
 Alexa: Alright question stored
 ** now go to base case
+
+------------------------------------------------------------------
+Phase 2: the study session
+
+
+# define help
+
+Alexa: Alright all the questions have been entered
+
+Alexa: Here's the question : "asks question"  Say repeat to have me repeat
+the question or say help
+#needs to wait for Users answer
+
+#User can ask to repeat the question or can straight up answer
+
+
+User : "says answer"
+
+# first apply logic to determine whether right or wrong
+
+if correct:
+Alexa: thats correct, moving on the next question
+# moves on to the next question go to base case
+
+if wrong:
+Alexa : thats wrong , try again , you have two tries left
+
+# user gets it right (move to correct pile ) and follow procedure for correct
+
+# if user expends all three tries
+Alexa: You have used all your tries, the correct answer is "correct answer" moving on
+
+# put this card in wrong pile
+-------------------------------------------------------------------
+
+# after round 1 iterate through wrong pile till is empty
